@@ -36,9 +36,15 @@ int main ()
         {
             max = integers[i];
         }
+        
+        int element = max;
+        int max_index;
+        if(element = integers[i])
+        {
+            max_index = i;
+            cout << "\nThe largest number is: "<< max <<" "<<"["<<i<<"]"<<endl;
+        }
     }
-    cout << "\nThe largest number is: "<< max << endl;
-
     /*finding the smallest number*/
     int min = integers[0];
 
@@ -48,9 +54,15 @@ int main ()
         {
             min = integers[i];
         }
+        
+        int element = min;
+        int min_index;
+        if(element = integers[i])
+        {
+            min_index = i;
+            cout << "\nThe smallest number is: "<< min <<" "<<"["<<i<<"]"<<endl;
+        }
     }
-    cout << "The smallest number is: "<< min << endl;
-    
     /*sorting elements into descending order*/
     int n = sizeof(integers)/sizeof(integers[0]); 
     sort (integers, integers+n, greater<int>() ); 
